@@ -2,13 +2,14 @@ function addFileInfoSlug(nameLength, numberPages)
 // adds 1/2 inch to the bottom of the media box and adds the filename and (optionally) the page numberPages
 // filename will be truncated by setting the nameLength
 {
+var inch = 72;
 var bottom;
-var rMedia = this.getPageBox("Media",this.pageNum); 
+var rMedia = this.getPageBox("Crop",this.pageNum); 
 bottom = rMedia[3]
 rMedia[3] -= 0.5 * inch;
-this.setPageBoxes("Media",0,this.numPages-1,rMedia);
+this.setPageBoxes("Crop",0,this.numPages-1,rMedia);
 
-var inch = 72;
+
 var jobNumber = this.documentFileName;
 jobNumber = jobNumber.substr(0,nameLength);
 
