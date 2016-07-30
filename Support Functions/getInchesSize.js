@@ -1,5 +1,5 @@
 function getInchesSize(size) 
-// converts a page boxes size in points (width and height) to the equivalent inches
+// converts a page boxes size in points (width and height) to the equivalent size in inches
 // returns an array (inchesSize) [0] is width [1] is height.
 
 {
